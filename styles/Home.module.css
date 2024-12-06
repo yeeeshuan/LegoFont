@@ -1,0 +1,199 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+@font-face {
+  font-family: 'Lego';
+  src: url('/fonts/LegoFont-Regular.otf');
+ }
+
+/* In your css file where you want to use the font */
+p.duckie { 
+  font-family: 'Lego';
+  font-size: 300px;
+  letter-spacing: -0.2em;
+  line-height: 0;
+ }
+
+.type{
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.typeLeft{
+  width: 50%; 
+}
+
+.typeRight{
+  width: 43%; 
+}
+
+.parts{
+  display: flex; 
+  border: none; 
+  margin-bottom: 1rem; 
+}
+
+.element{
+  font-family: 'Lego';
+  height: 75px; 
+  font-size: 400px;
+  line-height: 20px;
+  letter-spacing: -0.25em;
+  padding-left: 50px; 
+  overflow-y: hidden;
+  resize: none;
+  border: none; 
+}
+
+.element1 { 
+  font-family: 'Lego';
+  height: 500px; 
+  font-size: 600px;
+  line-height: 200px;
+  font-feature-settings: 'salt' on;
+  letter-spacing: -0.3em;
+  margin: 0; 
+  padding-left: 75px; 
+  overflow-y: hidden;
+  resize: none;
+  width: 100%; 
+ }
+
+ .element2 { 
+  font-family: 'Lego';
+  height: 500px; 
+  line-height: 300px;
+  font-size: 2000px;
+  font-feature-settings: 'salt' on;
+  margin: 0; 
+  letter-spacing: 0em;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%; 
+  border:none; 
+ }
+
+ .title{
+  font-size: 48px; 
+  font-family: "Inter"; 
+  font-weight: 400;
+  text-align: left;
+ }
+
+ .subtitle{
+  font-size: 24px; 
+  font-family: "Inter"; 
+  font-weight: 400;
+  text-align: left;
+ }
+
+ .btn{
+  width: 64px; 
+  height: 64px; 
+  border-radius: 400px;
+  margin-right: 1rem;
+  margin-bottom: 2rem; 
+  font-size: 12px; 
+  font-family: "Inter"; 
+  border: 1px solid black; 
+  background-color: white;
+ }
+
+ .btn:hover{
+  border: 1px solid black; 
+  background-color: black;
+  color: white; 
+ }
+
+ .btnClicked{
+  width: 64px; 
+  height: 64px; 
+  border-radius: 400px;
+  margin-right: 1rem;
+  margin-bottom: 2rem; 
+  font-size: 12px; 
+  font-family: "Inter"; 
+  border: 1px solid black; 
+  background-color: black;
+  color: white; 
+ }
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
