@@ -25,10 +25,10 @@ export default function Home() {
 
         <button 
         className={duckie ? styles.btnClicked : styles.btn}
-        onClick={() => click(true)}>Duckie</button>
+        onClick={() => click(true)}>duckie</button>
         <button 
         className={!duckie ? styles.btnClicked : styles.btn}
-        onClick={() => click(false)}>Frog</button>
+        onClick={() => click(false)}>frog</button>
 
         {duckie? template("duckie", placeholder, setPlaceholder) : template("frog", placeholder, setPlaceholder)}
       </main>

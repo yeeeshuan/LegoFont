@@ -21,7 +21,7 @@ export default function template(type, placeholder, setPlaceholder) {
         </div>
         <div className={styles.type}>
           <div className={styles.typeLeft}>
-            <h1 className={styles.subtitle}>Type Here</h1>
+            <h1 className={styles.subtitle}>Type Here: <strong><u>{type}</u></strong></h1> 
             <textarea 
             onChange={handleInputChange} // Attach the change handler
             className={styles.element1}>

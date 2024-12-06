@@ -191,6 +191,14 @@ p.duckie {
   color: white; 
  }
 
+ .toType{
+  font-size: 24px; 
+  font-family: "Inter"; 
+  font-weight: 400;
+  text-align: left;
+  font-weight: bold;
+ }
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
