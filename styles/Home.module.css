@@ -211,4 +211,61 @@ p.duckie {
     width: 100%;
     flex-direction: column;
   }
+
+  .subtitle{
+    font-size: 18px;
+  }
+
+  .type{
+    display: block; 
+  }
+
+  .parts{
+    margin-bottom: 2rem;
+  }
+
+  .typeLeft{
+    width: 100%; 
+    margin-bottom: 2rem;
+  }
+  
+  .typeRight{
+    width: 100%; 
+  }
+
+  .element{
+    height: 75px; 
+    font-size: 200px;
+    line-height: 20px;
+    letter-spacing: -0.375em;
+    padding-left: 0.5rem; 
+  }
+
+  .element1{
+    height: 75px; 
+    font-size: 200px;
+    line-height: 20px;
+    font-feature-settings: 'salt' on;
+    letter-spacing: -0.35em;
+    margin: 0; 
+    padding-left: 25px; 
+    overflow-y: hidden;
+    resize: none;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .element2{
+    height: 300px; 
+    font-size: 800px;
+    line-height: 200px;
+    font-feature-settings: 'salt' on;
+    letter-spacing: -0.375em;
+    margin: 0; 
+    padding-left: 25px; 
+    overflow-y: hidden;
+    resize: none;
+    width: 100%; 
+    box-sizing: border-box;
+  }
 }

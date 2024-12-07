@@ -5,7 +5,25 @@ import { useState } from 'react';
 export default function template(type, name, placeholder, setPlaceholder) {
 
   const handleInputChange = (e) => {
-    setPlaceholder(e.target.value.slice(-1));
+    let val = e.target.value.slice(-1); 
+    setPlaceholder(val); 
+  };
+
+  const handleKeyDown = (e) => {
+
+    const allowedKeys = ['Backspace', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown']; // Add arrow keys
+
+    if (type === "duckie"){
+      const allowedChars = ['d', 'u', 'c', 'k', 'i', 'e'];
+      if (!allowedChars.includes(e.key.toLowerCase()) && !allowedKeys.includes(e.key)) {
+        e.preventDefault(); // Prevent typing of invalid keys
+      }
+    }else{
+      const allowedChars = ['f', 'r', 'o', 'g'];
+      if (!allowedChars.includes(e.key.toLowerCase()) && !allowedKeys.includes(e.key)) {
+        e.preventDefault(); // Prevent typing of invalid keys
+      }
+    }
   };
 
   return (
@@ -24,6 +42,7 @@ export default function template(type, name, placeholder, setPlaceholder) {
             <h1 className={styles.subtitle}>Type Here: <strong><u>{name}</u></strong></h1> 
             <textarea 
             onChange={handleInputChange} // Attach the change handler
+            onKeyDown={handleKeyDown}
             className={styles.element1}>
             </textarea>
           </div>

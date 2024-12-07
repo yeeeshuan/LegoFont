@@ -30,7 +30,8 @@ export default function Home() {
         className={!duckie ? styles.btnClicked : styles.btn}
         onClick={() => click(false)}>frog</button>
 
-        {duckie? template("duckie", "duckie", placeholder, setPlaceholder) : template("zfraoge", "frog", placeholder, setPlaceholder)}
+        {duckie? template("duckie", "duckie", placeholder, setPlaceholder) : 
+        template("zfraoge", "frog", placeholder, setPlaceholder)}
       </main>
     </div>
   );
