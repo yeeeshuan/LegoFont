@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 
-export default function template(type, placeholder, setPlaceholder) {
+export default function template(type, name, placeholder, setPlaceholder) {
 
   const handleInputChange = (e) => {
     setPlaceholder(e.target.value.slice(-1));
@@ -21,7 +21,7 @@ export default function template(type, placeholder, setPlaceholder) {
         </div>
         <div className={styles.type}>
           <div className={styles.typeLeft}>
-            <h1 className={styles.subtitle}>Type Here: <strong><u>{type}</u></strong></h1> 
+            <h1 className={styles.subtitle}>Type Here: <strong><u>{name}</u></strong></h1> 
             <textarea 
             onChange={handleInputChange} // Attach the change handler
             className={styles.element1}>
