@@ -114,8 +114,8 @@ p.duckie {
 .element{
   font-family: 'Lego';
   height: 75px; 
-  font-size: 400px;
-  line-height: 20px;
+  font-size: 300px;
+  line-height: 10px;
   letter-spacing: -0.25em;
   padding-left: 50px; 
   overflow-y: hidden;
@@ -125,7 +125,7 @@ p.duckie {
 
 .element1 { 
   font-family: 'Lego';
-  height: 500px; 
+  height: 625px; 
   font-size: 600px;
   line-height: 200px;
   font-feature-settings: 'salt' on;
@@ -139,7 +139,7 @@ p.duckie {
 
  .element2 { 
   font-family: 'Lego';
-  height: 500px; 
+  height: 625px; 
   line-height: 300px;
   font-size: 2000px;
   font-feature-settings: 'salt' on;
