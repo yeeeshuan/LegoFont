@@ -75,6 +75,11 @@
   height: 1em;
 }
 
+.nav {
+  position: fixed;
+  height: 2rem; 
+}
+
 @font-face {
   font-family: 'Lego';
   src: url('/fonts/LegoFont-Regular.otf');
@@ -106,9 +111,9 @@ p.duckie {
 }
 
 .parts{
-  display: flex; 
   border: none; 
   margin-bottom: 1rem; 
+  margin-top: 6em; 
 }
 
 .element{

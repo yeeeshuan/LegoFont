@@ -28,8 +28,8 @@ export default function template(type, name, placeholder, setPlaceholder) {
 
   return (
     <div>
-        <h1 className={styles.subtitle}>Kit of Parts</h1>
         <div className={styles.parts}>
+          <h1 className={styles.subtitle}>Kit of Parts</h1>
           <textarea
             readOnly
             disabled="disabled"

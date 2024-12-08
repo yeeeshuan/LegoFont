@@ -23,12 +23,14 @@ export default function Home() {
 
       <main>
 
+      <nav className={styles.nav}>
         <button 
         className={duckie ? styles.btnClicked : styles.btn}
         onClick={() => click(true)}>duckie</button>
         <button 
         className={!duckie ? styles.btnClicked : styles.btn}
         onClick={() => click(false)}>frog</button>
+      </nav>
 
         {duckie? template("duckie", "duckie", placeholder, setPlaceholder) : 
         template("zfraoge", "frog", placeholder, setPlaceholder)}
